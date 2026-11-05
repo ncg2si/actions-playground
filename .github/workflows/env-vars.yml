@@ -1,0 +1,12 @@
+name: Environment Variables
+on:
+  push:
+    branches:
+      - main
+env:
+  APP_ENV: development
+jobs:
+  define_evn:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "App environment is $APP_EVN"
