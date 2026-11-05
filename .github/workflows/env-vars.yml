@@ -9,4 +9,4 @@ jobs:
   define_evn:
     runs-on: ubuntu-22.04
     steps:
-      - run: echo "App environment is $APP_EVN"
+      - run: echo "App environment is $APP_ENV"
