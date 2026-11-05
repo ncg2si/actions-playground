@@ -16,3 +16,13 @@ jobs:
 
       - name: Print message
         run: echo "Hello, GitHub Actions!"
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "Building project"
+  test:
+    runs-on: ubuntu-22.04
+    #needs: build
+    steps:
+      - run: echo "Running tests
+    
