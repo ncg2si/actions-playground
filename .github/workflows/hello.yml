@@ -22,7 +22,7 @@ jobs:
       - run: echo "Building project"
   test:
     runs-on: ubuntu-22.04
-    #needs: build
+    needs: build
     steps:
       - run: echo "Running tests"
     
