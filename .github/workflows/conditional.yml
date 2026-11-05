@@ -1,0 +1,12 @@
+name: conditional execution
+
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - run: echo "deploying to production"
+  
