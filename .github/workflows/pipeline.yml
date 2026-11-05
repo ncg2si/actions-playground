@@ -1,4 +1,4 @@
-name: whole workflow: build, test, run
+name: whole workflow build – test – run
 on:
   push:
     branches: [main]
