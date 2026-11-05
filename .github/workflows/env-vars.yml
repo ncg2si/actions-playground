@@ -9,4 +9,9 @@ jobs:
   define_evn:
     runs-on: ubuntu-22.04
     steps:
-      - run: echo "App environment is $APP_ENV"
+      - name: Print app environment variable
+        run: echo "App environment is $APP_ENV"
+      - name: Print stage variable
+        run: echo "Stage = $STAGE"
+        env:
+          STAGE: test
